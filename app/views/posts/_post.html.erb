@@ -1,0 +1,13 @@
+<div id="<%= dom_id post %>">
+	<div class="card" style="width: 18rem;">
+		<div class="card-header">
+			<%= post.user.username %>
+		</div>
+		<%= image_tag post.images.last, class: "card-img-top" %>
+		<div class="card-body">
+			<h5 class="card-title"><%= post.caption %></h5>
+		</div>
+		<div class="card-footer">Featured</div>
+	</div>
+</div>
+
