@@ -49,5 +49,8 @@ body {
     margin-right: 0.5rem;
 }
 
+.card::-webkit-scrollbar {
+    width: 0;
+}
 
 
