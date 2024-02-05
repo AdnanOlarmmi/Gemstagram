@@ -1,0 +1,20 @@
+<div class="d-flex justify-content-between">
+	<div class="d-flex gap-2">
+		<%= image_tag "default_profile_picture.jpg", class: "img-thumbnail rounded-circle", style: "width: 2.5rem" %>
+		<div class="d-flex flex-column">
+			<small
+				class="fw-bold"
+				style="max-width: 10rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis"
+				>Adnan</small
+			>
+			<small
+				class="text-muted"
+				style="max-width: 10rem;  font-size: .7rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis"
+				>Suggested for you</small
+			>
+		</div>
+	</div>
+	<%= link_to root_path, style: "text-decoration: none;" do %>
+		<small class="fw-bold text-primary">Follow</small>
+	<% end %>
+</div>
