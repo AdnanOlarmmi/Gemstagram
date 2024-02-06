@@ -3,7 +3,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem "font-awesome-sass", "~> 6.5.1"
 
+gem "rack-livereload", group: :development
+
 ruby "3.1.3"
+
+group :development do
+  gem 'guard-livereload', '~> 2.5', require: false
+end
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.8"

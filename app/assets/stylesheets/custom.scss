@@ -53,4 +53,14 @@ body {
     width: 0;
 }
 
+textarea {
+    resize: none;
+}
 
+.filepond--item {
+    width: calc(50% - 0.5em);
+}
+
+.filepond--root {
+    max-height: 20em;
+}

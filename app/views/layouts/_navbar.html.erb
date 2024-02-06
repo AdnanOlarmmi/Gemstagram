@@ -66,9 +66,13 @@
 					<i class="fa-solid fa-house fa-xl"></i>
 				<% end %>
 				<i class="fa-brands fa-facebook-messenger fa-xl"></i>
-				<%= link_to new_post_path, class: "text-dark" do %>
+				<a
+					type="button"
+					data-bs-toggle="modal"
+					data-bs-target="#exampleModal"
+				>
 					<i class="fa-regular fa-square-plus fa-xl"></i>
-				<% end %>
+				</a>
 				<i class="fa-regular fa-compass fa-xl"></i>
 				<i class="fa-regular fa-heart fa-xl"></i>
 				<nav class="navbar">
@@ -90,7 +94,7 @@
 								</a>
 								<ul class="dropdown-menu">
 									<li>
-										<%= button_to "Log Out", destroy_user_session_path, method: :delete, class:"dropdown-item"  %>
+										<%= button_to "Log Out", destroy_user_session_path, method: :delete, class:"dropdown-item" %>
 									</li>
 								</ul>
 							</span>
@@ -101,3 +105,5 @@
 		</div>
 	</div>
 </nav>
+
+<%= render "posts/form", post: Post.new %>
