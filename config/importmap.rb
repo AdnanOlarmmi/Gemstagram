@@ -10,3 +10,4 @@ pin "@popperjs/core", to: "https://ga.jspm.io/npm:@popperjs/core@2.11.2/lib/inde
 pin "filepond" # @4.30.6
 pin_all_from "app/javascript/custom", under: "custom"
 pin "filepond-plugin-image-preview" # @4.6.12
+pin "filepond-plugin-file-validate-type" # @1.2.8

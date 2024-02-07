@@ -7,6 +7,8 @@ gem "rack-livereload", group: :development
 
 ruby "3.1.3"
 
+gem 'activestorage-validator'
+
 group :development do
   gem 'guard-livereload', '~> 2.5', require: false
 end
