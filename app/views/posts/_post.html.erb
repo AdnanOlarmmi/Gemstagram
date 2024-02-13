@@ -86,7 +86,7 @@
 					<% end %>
 				</div>
 			</div>
-			<%= render "posts/post_actions", post: post  %>
+			<%= render "posts/post_actions", post: post %>
 			<p class="card-text">
 				<span class="fw-bold"> <%= post.user.username %> </span>
 				<%= post.caption %>
@@ -94,17 +94,25 @@
 
 			<%= render "posts/post_comments", post: post %>
 
-			<small class="text-muted"><%= time_ago_in_words(post.created_at) %></small>
+			<small
+				class="text-muted"
+			><%= time_ago_in_words(post.created_at) %></small>
 		</div>
-		<div class="card-footer d-flex justify-content-between bg-white">
-      <input type="text" class="w-75" placeholder="Add a comment..." style="border: none" />
-      <a class="text-primary text-decoration-none fw-bold"> Post </a>
-    </div>
+		<%= form_with url: comments_path, method: :post, data: {controller: "comments", action: "turbo:submit-end->comments#clearComment"} do |form| %>
+			<div class="card-footer d-flex justify-content-between bg-white">
+				<%= form.hidden_field :post_id, value: post.id %>
+				<%= form.text_area :comment_body, class: "w-75", placeholder: "Add a comment...", style: "border: none" %>
+				<%= form.submit "Post", class: "text-primary text-decoration-none fw-bold", style: "background: none; border: none;" %>
+			</div>
+		<% end %>
 	</div>
 </div>
 
 <script>
-	document.getElementById("post<%= post.id %>_images").addEventListener("dblclick", function (event) {
-		document.getElementById("post<%=post.id%>actions-likeBtn").click();
-	});
+	document
+		.getElementById('posteexs24eexs_images')
+		.addEventListener('dblclick', function (event) {
+			document.getElementById('posteexs25eexsactions-likeBtn').click();
+		});
 </script>
+
