@@ -106,8 +106,6 @@ Developed and deployed a robust Instagram clone using Ruby on Rails, incorporati
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
 > Coming soon
 
 <!-- >[Live Demo Link](https://yourdeployedapplicationlink.com) -->
