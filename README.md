@@ -24,10 +24,7 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
 
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>Gemstagram</b></h3>
 
 </div>
 
@@ -57,29 +54,27 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Gemstagram] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[your_project__name]** is a...
+Developed and deployed a robust Instagram clone using Ruby on Rails, incorporating responsive design principles, implementing secure user authentication, authorization, and image upload functionality, while strictly adhering to Ruby on Rails best practices, showcasing comprehensive skills in full-stack web development.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://reactjs.org/">Html</a></li>
+    <li><a href="https://reactjs.org/">Css</a></li>
+    <li><a href="https://reactjs.org/">JavaScript</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://expressjs.com/">Ruby on Rails</a></li>
   </ul>
 </details>
 
@@ -96,9 +91,25 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- User Authentication and Authorization: Secure user registration, login, and logout functionalities ensuring user privacy and security.
+
+- Profile Management: Users can create and edit their profiles, including adding a profile picture, bio, and other personal details.
+
+- Image Upload and Management: Users can upload images, apply filters, and edit captions before posting. The application handles image storage and retrieval efficiently.
+
+- Social Interactions: Users can like and comment on posts, fostering engagement and interaction within the community.
+
+- Feed Generation: The application generates personalized feeds for users, displaying posts from followed accounts in chronological order.
+
+- Explore Page: A dedicated section for discovering new content and users based on interests, hashtags, or popular trends.
+
+- Search Functionality: Users can search for specific posts, users, or hashtags, enhancing content discoverability.
+
+- Notifications: Real-time notifications for likes, comments, and follows, keeping users informed and engaged with their activity.
+
+- Responsive Design: Ensures seamless user experience across various devices, including desktops, tablets, and smartphones.
+
+- Deployment: The application is successfully deployed to a hosting platform, making it accessible to users online.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -107,8 +118,9 @@ After you're finished please remove all the comments and instructions!
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 > Add a link to your deployed project.
+Coming soon
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+>[Live Demo Link](https://yourdeployedapplicationlink.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -116,119 +128,74 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
-To get a local copy up and running, follow these steps.
+If you want to get a local copy up and running, please follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
+To run this project you need:
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+- An IDE e.g [Visual studio code](https://code.visualstudio.com/).
+- [A terminal](https://code.visualstudio.com/docs/terminal/basics).
 
 ### Setup
 
-Clone this repository to your desired folder:
+Clone this repository to your desired folder or download the Zip folder:
 
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
 ```
---->
+git clone https://github.com/AdnanOlarmmi/Gemstagram.git
+```
+
+- Navigate to the location of the folder in your machine:
+
+**``you@your-Pc-name:~$ cd Gemstagram``**
 
 ### Install
 
-Install this project with:
+To install all dependencies, run:
 
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
 ```
---->
+bundle install
+```
 
 ### Usage
 
-To run the project, execute the following command:
+To run the project, follow these instructions:
 
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
+- After Cloning this repo to your local machine.
+- To get it running in your terminal, run it in your IDE
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
+- To run Linter Tests, run:
 
 ```
- -->
+rubocop
+```
+
+- To run Unit Tests, run:
+```
+rspec
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
+## 👤 Author <a name="author"></a>
 
-## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Is-haq, Adnan Olamilekan**
+- GitHub: [@AdnanOlarmmi](https://github.com/adnanolarmmi)
+- Twitter: [@AdnanIshaqOla](https://twitter.com/AdnanIshaqOla)
+- LinkedIn: [Adnan (Olamilekan) Is-haq](https://linkedin.com/in/adnan-is-haq-olamilekan)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **Add Live Sessions**
+- [ ] **Add Direct Messaging**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -238,48 +205,38 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
-
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
-If you like this project...
+Give a ⭐️ if you like this project and how I managed to build it!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
+- The original design ideal from Microverse💕.
+- Project from [Microverse](https://bit.ly/MicroverseTN) Rails / Preparing to Job Search Module.
+- Thanks to the Microverse team for the great curriculum.
+- Thanks to the Code Reviewer(s) for the insightful feedback.
+- A great thanks to My coding partner(s), morning session team, and standup team for their contributions.
+- Hat tip to anyone whose code was used.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
 
 ## ❓ FAQ <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
+- **Can I fork and reuse the repository**
 
-- **[Question_1]**
+  - Yes please, feel free.
 
-  - [Answer_1]
+- **Can I improve the repository, and my changes will be accepted if they are good?**
 
-- **[Question_2]**
-
-  - [Answer_2]
+  - Yes please, nice ideas are welcome.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
