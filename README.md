@@ -89,26 +89,15 @@ Developed and deployed a robust Instagram clone using Ruby on Rails, incorporati
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - User Authentication and Authorization: Secure user registration, login, and logout functionalities ensuring user privacy and security.
-
 - Profile Management: Users can create and edit their profiles, including adding a profile picture, bio, and other personal details.
-
 - Image Upload and Management: Users can upload images, apply filters, and edit captions before posting. The application handles image storage and retrieval efficiently.
-
 - Social Interactions: Users can like and comment on posts, fostering engagement and interaction within the community.
-
 - Feed Generation: The application generates personalized feeds for users, displaying posts from followed accounts in chronological order.
-
 - Explore Page: A dedicated section for discovering new content and users based on interests, hashtags, or popular trends.
-
 - Search Functionality: Users can search for specific posts, users, or hashtags, enhancing content discoverability.
-
 - Notifications: Real-time notifications for likes, comments, and follows, keeping users informed and engaged with their activity.
-
 - Responsive Design: Ensures seamless user experience across various devices, including desktops, tablets, and smartphones.
-
 - Deployment: The application is successfully deployed to a hosting platform, making it accessible to users online.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -118,9 +107,10 @@ Developed and deployed a robust Instagram clone using Ruby on Rails, incorporati
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 > Add a link to your deployed project.
-Coming soon
 
->[Live Demo Link](https://yourdeployedapplicationlink.com)
+> Coming soon
+
+<!-- >[Live Demo Link](https://yourdeployedapplicationlink.com) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
