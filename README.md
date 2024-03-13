@@ -54,7 +54,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Gemstagram] <a name="about-project"></a>
+# 📖 Gemstagram <a name="about-project"></a>
 
 Developed and deployed a robust Instagram clone using Ruby on Rails, incorporating responsive design principles, implementing secure user authentication, authorization, and image upload functionality, while strictly adhering to Ruby on Rails best practices, showcasing comprehensive skills in full-stack web development.
 
