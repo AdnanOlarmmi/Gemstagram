@@ -5,7 +5,9 @@
 			<small
 				class="fw-bold"
 				style="max-width: 10rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis"
-			><%= liker.username %></small>
+			> <%= link_to liker, class: "a-decoration-none" do %>
+			 <%= liker.username %><% end %>
+			 </small>
 		</div>
 	</div>
 	<%= link_to root_path,class: "btn btn-primary", style: "text-decoration: none;" do %>

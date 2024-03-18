@@ -3,7 +3,7 @@ class PostsController < ApplicationController
 
   # GET /posts or /posts.json
   def index
-    @posts = Post.all
+    redirect_to root_path
   end
 
   # GET /posts/1 or /posts/1.json
@@ -49,6 +49,7 @@ class PostsController < ApplicationController
 
   # DELETE /posts/1 or /posts/1.json
   def destroy
+  # Then delete the post
     @post.destroy
 
     respond_to do |format|
@@ -60,7 +61,13 @@ class PostsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
-      @post = Post.find(params[:id])
+      @post = Post.find_by(id: params[:id])
+      if @post
+        @post = Post.find(params[:id])
+      else
+        @posts = Post.all
+        redirect_to root_path
+      end
     end
 
     # Only allow a list of trusted parameters through.

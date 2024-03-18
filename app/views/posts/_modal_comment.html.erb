@@ -6,7 +6,11 @@
 				<small
 					class="fw-bold"
 					style="max-width: 10rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis"
-				><%= comment.user.username %></small>
+				>
+				<%= link_to comment.user, class: "a-decoration-none" do %> 
+				<%= comment.user.username %>
+				<% end %>
+				</small>
 				<small><%= comment.body %></small>
 				<small
 					class="text-muted"
