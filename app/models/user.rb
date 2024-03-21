@@ -23,6 +23,8 @@ class User < ApplicationRecord
 
   has_many :waiting_sent_requests, -> {where(accepted: false)}, class_name: "Follow", foreign_key: "follower_id"
 
+  has_many :waiting_followings, through: :waiting_sent_requests, source: :followed
+
   def follow(user)
     unless user == self
       Follow.create(follower: self, followed: user)

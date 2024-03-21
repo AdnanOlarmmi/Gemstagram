@@ -11,14 +11,15 @@
 <% end %>
 
 <% if alert %>
-	<div class="alert alert-danger">
-		<%= alert.each do |a| %>
-			<%= a %>
-		<% end %>
-	</div>
-<% elsif alert.is_a?(String)%>
-	<div class="alert alert-danger">
-		<%= alert %>
-	</div>
+	<% if alert.is_a?(String) %>
+		<div class="alert alert-danger">
+			<%= alert %>
+		</div>
+	<% else %>
+		<div class="alert alert-danger">
+			<%= alert.each do |a| %>
+				<%= a %>
+			<% end %>
+		</div>
+	<% end %>
 <% end %>
-

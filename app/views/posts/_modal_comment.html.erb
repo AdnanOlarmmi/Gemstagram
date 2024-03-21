@@ -1,13 +1,13 @@
 <div id="post<%= comment.post_id %>ModalComment<%= comment.id %>">
 	<div class="d-flex justify-content-between">
 		<div class="d-flex gap-2">
-			<%= image_tag "default_profile_picture.jpg", class: "img-thumbnail rounded-circle", style: "width: 2.5rem; max-height: 2.5rem;" %>
+				<%= image_tag comment.user.profile_picture.attached?  ? comment.user.profile_picture : "default_profile_picture.jpg", class: "img-thumbnail rounded-circle", style: "width: 2.5rem; max-height: 2.5rem;" %>
 			<div class="d-flex flex-column mx-3 justify-content-center">
 				<small
 					class="fw-bold"
 					style="max-width: 10rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis"
 				>
-				<%= link_to comment.user, class: "a-decoration-none" do %> 
+				<%= link_to comment.user, class: "a-decoration-none", data: {turbo: 'false'} do %> 
 				<%= comment.user.username %>
 				<% end %>
 				</small>

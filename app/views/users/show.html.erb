@@ -1,6 +1,6 @@
 <%= render 'users/profile_header', user: @user %>
-<% if !@user.private || @user == current_user %>
-    <%= render 'users/profile_posts', user: @user.posts %>
+<% if !@user.private || @user == current_user || current_user.followings.include?(@user) %>
+	<%= render 'users/profile_posts', user: @user.posts %>
 <% else %>
-    <%= render 'users/profile_private' %>
+	<%= render 'users/profile_private' %>
 <% end %>
