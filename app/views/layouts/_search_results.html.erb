@@ -9,7 +9,7 @@
                             class="fw-bold"
                             style="max-width: 10rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis"
                         >
-                            <%= link_to u, class: "a-decoration-none" do %>
+                            <%= link_to u, class: "a-decoration-none", data: {turbo: false} do %>
                                 <%= u.username %>
                             <% end %>
                         </small>
