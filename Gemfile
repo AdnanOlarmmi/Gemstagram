@@ -14,7 +14,7 @@ group :development do
 end
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.0.8"
+gem "rails", "~> 6.0.8"
 
 gem 'bootstrap', '~> 5.3.2'
 
