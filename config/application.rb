@@ -7,7 +7,7 @@ Bundler.require(*Rails.groups)
 
 module Gemstagram
   class Application < Rails::Application
-    config.autoload_lib(ignore: %w[assets tasks generators])
+    config.autoload_paths(ignore: %w[assets tasks generators])
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
